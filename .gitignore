@@ -4,3 +4,5 @@
 
 /.vs
 /CloudTracking/.vs
+/CloudTracking/CloudTracking.Messages/bin/Debug/netcoreapp2.1
+/CloudTracking/CloudTracking.Messages/obj
