@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudTracking", "CloudTrack
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudTracking.Messages", "CloudTracking.Messages\CloudTracking.Messages.csproj", "{6EF5B155-96E6-4F74-9D63-B440E7AC9CE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudTraking.PingGateWay", "CloudTraking.PingGateWay\CloudTraking.PingGateWay.csproj", "{86AA0B7B-F0F0-4829-B4B8-16115D96E64C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudTraking.CarSimulator", "CloudTraking.CarSimulator\CloudTraking.CarSimulator.csproj", "{1147C28A-945B-428F-B78B-E36E794448E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6EF5B155-96E6-4F74-9D63-B440E7AC9CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EF5B155-96E6-4F74-9D63-B440E7AC9CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EF5B155-96E6-4F74-9D63-B440E7AC9CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AA0B7B-F0F0-4829-B4B8-16115D96E64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AA0B7B-F0F0-4829-B4B8-16115D96E64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AA0B7B-F0F0-4829-B4B8-16115D96E64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AA0B7B-F0F0-4829-B4B8-16115D96E64C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1147C28A-945B-428F-B78B-E36E794448E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1147C28A-945B-428F-B78B-E36E794448E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1147C28A-945B-428F-B78B-E36E794448E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1147C28A-945B-428F-B78B-E36E794448E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

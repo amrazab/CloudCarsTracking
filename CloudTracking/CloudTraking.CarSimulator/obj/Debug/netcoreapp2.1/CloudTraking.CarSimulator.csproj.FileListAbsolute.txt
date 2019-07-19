@@ -1,0 +1,14 @@
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2.1\CloudTraking.CarSimulator.deps.json
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2.1\CloudTraking.CarSimulator.runtimeconfig.json
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2.1\CloudTraking.CarSimulator.runtimeconfig.dev.json
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2.1\CloudTraking.CarSimulator.dll
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2.1\CloudTraking.CarSimulator.pdb
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\obj\Debug\netcoreapp2.1\CloudTraking.CarSimulator.csprojAssemblyReference.cache
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\obj\Debug\netcoreapp2.1\CloudTraking.CarSimulator.csproj.CoreCompileInputs.cache
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\obj\Debug\netcoreapp2.1\CloudTraking.CarSimulator.AssemblyInfoInputs.cache
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\obj\Debug\netcoreapp2.1\CloudTraking.CarSimulator.AssemblyInfo.cs
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\obj\Debug\netcoreapp2.1\CloudTraking.CarSimulator.dll
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\obj\Debug\netcoreapp2.1\CloudTraking.CarSimulator.pdb
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2.1\CloudTracking.Messages.dll
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2.1\CloudTracking.Messages.pdb
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\obj\Debug\netcoreapp2.1\CloudTraking.CarSimulator.csproj.CopyComplete

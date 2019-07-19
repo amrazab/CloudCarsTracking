@@ -1,0 +1,17 @@
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\bin\Debug\netcoreapp2.1\CloudTraking.PingGateWay.deps.json
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\bin\Debug\netcoreapp2.1\CloudTraking.PingGateWay.runtimeconfig.json
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\bin\Debug\netcoreapp2.1\CloudTraking.PingGateWay.runtimeconfig.dev.json
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\bin\Debug\netcoreapp2.1\CloudTraking.PingGateWay.dll
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\bin\Debug\netcoreapp2.1\CloudTraking.PingGateWay.pdb
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.1\CloudTraking.PingGateWay.csprojAssemblyReference.cache
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.1\CloudTraking.PingGateWay.csproj.CoreCompileInputs.cache
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.1\CloudTraking.PingGateWay.RazorAssemblyInfo.cache
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.1\CloudTraking.PingGateWay.RazorAssemblyInfo.cs
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.1\CloudTraking.PingGateWay.AssemblyInfoInputs.cache
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.1\CloudTraking.PingGateWay.AssemblyInfo.cs
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.1\CloudTraking.PingGateWay.RazorTargetAssemblyInfo.cache
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.1\CloudTraking.PingGateWay.dll
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.1\CloudTraking.PingGateWay.pdb
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\bin\Debug\netcoreapp2.1\CloudTracking.Messages.dll
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\bin\Debug\netcoreapp2.1\CloudTracking.Messages.pdb
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.1\CloudTraking.PingGateWay.csproj.CopyComplete
