@@ -8,6 +8,7 @@ namespace CloudTracking.ServiceBus
         string QueueName { get; set; }
         bool Send(T message);
         event EventHandler<T> OnRecieve;
+        void startListen();
 
     }
 }

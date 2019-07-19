@@ -10,3 +10,5 @@
 /CloudTracking/CloudTracking.PingService/obj
 /CloudTracking/CloudTracking.ServiceBus/bin/Debug/netcoreapp2.1
 /CloudTracking/CloudTracking.ServiceBus/obj
+/CloudTracking/CloudTracking.Storage/bin/Debug/netcoreapp2.1
+/CloudTracking/CloudTracking.Storage/obj

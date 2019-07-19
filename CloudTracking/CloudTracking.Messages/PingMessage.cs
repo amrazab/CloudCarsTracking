@@ -10,7 +10,9 @@ namespace CloudTracking.Messages
         public int OilLevel { get; set; }
         public int Speed { get; set; }
         public CarStatus CarStatus { get; set; }
-        public string  ErrorMessage {get;set;}
+        public string ErrorMessage { get; set; }
+
+     
 
     }
 }

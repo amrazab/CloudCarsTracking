@@ -15,7 +15,7 @@ namespace CloudTracking.ServiceBus
         {
            
         }
-        private string _queueName;
+        private string _queueName = null;
         public string QueueName {
             get
             {
@@ -23,14 +23,17 @@ namespace CloudTracking.ServiceBus
             }
             set
             {
-                _queueName = value;
-                queueClient = new QueueClient(ServiceBusConnectionString, _queueName, ReceiveMode.PeekLock);
-                startListen();
+                if (_queueName == null || !(_queueName == value))
+                {
+                    _queueName = value;
+                    queueClient = new QueueClient(ServiceBusConnectionString, _queueName, ReceiveMode.PeekLock);
+                   
+                }
 
             }
         }
 
-        private void startListen()
+        public  void startListen()
         {
           queueClient.RegisterMessageHandler(
                     async (message, token) =>

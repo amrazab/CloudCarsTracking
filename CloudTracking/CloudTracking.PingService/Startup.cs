@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CloudTracking.ServiceBus;
+using CloudTracking.Storage;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -28,9 +29,10 @@ namespace CloudTracking.PingService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton(typeof(IServiceBus<>), typeof(AzureServiceBus<>));
+            services.AddTransient(typeof(IStorage), typeof(AzureTableStorage));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             var sreviceProvider = services.BuildServiceProvider();
-            QueueListener.Start(sreviceProvider);
+            new QueueListener().Start(sreviceProvider);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

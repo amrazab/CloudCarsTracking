@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CloudTracking.Messages\CloudTracking.Messages.csproj" />
     <ProjectReference Include="..\CloudTracking.ServiceBus\CloudTracking.ServiceBus.csproj" />
+    <ProjectReference Include="..\CloudTracking.Storage\CloudTracking.Storage.csproj" />
   </ItemGroup>
 
 </Project>

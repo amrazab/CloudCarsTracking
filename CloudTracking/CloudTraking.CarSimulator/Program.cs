@@ -12,7 +12,7 @@ namespace CloudTraking.CarSimulator
         static HttpClient client = new HttpClient();
         static void Main(string[] args)
         {
-            Timer t = new Timer(ping,null,0,60000);
+            Timer t = new Timer(ping,null,0,6000);
             Console.ReadLine();
         }
 
