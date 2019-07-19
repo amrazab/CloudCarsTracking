@@ -18,7 +18,11 @@ namespace CloudTraking.PingGateWay.Controllers
             return "Ping GateWay";
         }
 
-      
+      /// <summary>
+      /// 
+      /// </summary>
+      /// <param name="pingMessage"></param>
+      /// <returns></returns>
         [HttpPost]
         public ActionResult<string> Post([FromBody]PingMessage pingMessage)
         {
