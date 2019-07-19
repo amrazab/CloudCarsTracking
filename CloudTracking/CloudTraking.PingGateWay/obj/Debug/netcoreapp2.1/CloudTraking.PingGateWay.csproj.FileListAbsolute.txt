@@ -15,3 +15,5 @@ D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.
 D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\bin\Debug\netcoreapp2.1\CloudTracking.Messages.dll
 D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\bin\Debug\netcoreapp2.1\CloudTracking.Messages.pdb
 D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\obj\Debug\netcoreapp2.1\CloudTraking.PingGateWay.csproj.CopyComplete
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\bin\Debug\netcoreapp2.1\CloudTracking.ServiceBus.dll
+D:\swedq.se\Source\CloudTracking\CloudTraking.PingGateWay\bin\Debug\netcoreapp2.1\CloudTracking.ServiceBus.pdb

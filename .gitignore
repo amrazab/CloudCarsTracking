@@ -6,3 +6,7 @@
 /CloudTracking/.vs
 /CloudTracking/CloudTracking.Messages/bin/Debug/netcoreapp2.1
 /CloudTracking/CloudTracking.Messages/obj
+/CloudTracking/CloudTracking.PingService/bin/Debug/netcoreapp2.1
+/CloudTracking/CloudTracking.PingService/obj
+/CloudTracking/CloudTracking.ServiceBus/bin/Debug/netcoreapp2.1
+/CloudTracking/CloudTracking.ServiceBus/obj
