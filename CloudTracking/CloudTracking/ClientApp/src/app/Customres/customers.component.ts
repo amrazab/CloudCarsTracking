@@ -24,7 +24,7 @@ export class CustomersComponent implements OnInit {
   title:string ="Customers List";
   constructor()
   {
-   this.setTitle("Customers")
+   this.setTitle("Customers..")
   }
   setTitle(title:string):void{
     this.title = title;
