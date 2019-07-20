@@ -20,9 +20,9 @@ namespace CloudTracking.Storage
         CloudTable tableEventSourcing;
         IMapper mapper;
 
-        public AzureTableStorage()
+        public AzureTableStorage(string connectionString)
         {
-            storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=azab;AccountKey=VwB3fyhBd8zx6DWEOu5SPagGbPU1URBF/DbBe6Dm1yvd7Itz271DVQvlIqqmKR88uqPCzHd5FWT6RzTxwkibdg==;EndpointSuffix=core.windows.net");
+            storageAccount = CloudStorageAccount.Parse(connectionString);
             
             tableClient = storageAccount.CreateCloudTableClient();
             tableStatus = tableClient.GetTableReference("TrackingStatus");

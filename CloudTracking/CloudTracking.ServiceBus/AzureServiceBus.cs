@@ -9,7 +9,7 @@ namespace CloudTracking.ServiceBus
     public class AzureServiceBus<T> : IServiceBus<T>
     {
         private static IQueueClient queueClient;
-        private const string ServiceBusConnectionString = "Endpoint=sb://azabsrvcbus.servicebus.windows.net/;SharedAccessKeyName=ReadWrite;SharedAccessKey=B8r+a5yMzJ1BWa1ecOo+vAk7a/RFukJqLnYZfyMprlI=";
+        public  string ConnectionString {get;set;}
 
         public AzureServiceBus()
         {
@@ -26,7 +26,7 @@ namespace CloudTracking.ServiceBus
                 if (_queueName == null || !(_queueName == value))
                 {
                     _queueName = value;
-                    queueClient = new QueueClient(ServiceBusConnectionString, _queueName, ReceiveMode.PeekLock);
+                    queueClient = new QueueClient(ConnectionString, _queueName, ReceiveMode.PeekLock);
                    
                 }
 

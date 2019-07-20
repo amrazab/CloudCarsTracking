@@ -4,20 +4,31 @@ using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
+
+using System.IO;
 
 namespace CloudTraking.CarSimulator
 {
     class Program
     {
         static HttpClient client = new HttpClient();
+        static string pingUrl = "";
         static void Main(string[] args)
         {
+            IConfiguration config = new ConfigurationBuilder()
+          .SetBasePath(Directory.GetCurrentDirectory())
+        .AddJsonFile("appsettings.json", true, true)
+        .Build();
+             pingUrl = config["PingUrl"];
             Timer t = new Timer(ping,null,0,6000);
             Console.ReadLine();
         }
-
+      
         private static void ping(object state)
         {
+          
             try
             {
                 Console.WriteLine("ping started");
@@ -31,7 +42,7 @@ namespace CloudTraking.CarSimulator
                 Speed=100
                 };
                 var jsonn = JsonConvert.SerializeObject(pingMessage);
-                client.PostAsync("http://localhost:59426/api/Ping", new StringContent(jsonn, Encoding.UTF8, "application/json"));
+                client.PostAsync(pingUrl, new StringContent(jsonn, Encoding.UTF8, "application/json"));
                 Console.WriteLine("sent....");
             }
             catch (Exception ex)

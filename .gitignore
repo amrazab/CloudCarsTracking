@@ -12,3 +12,7 @@
 /CloudTracking/CloudTracking.ServiceBus/obj
 /CloudTracking/CloudTracking.Storage/bin/Debug/netcoreapp2.1
 /CloudTracking/CloudTracking.Storage/obj
+/CloudTracking/CloudTraking.CarSimulator/bin/Debug/netcoreapp2.1/appsettings.json
+/CloudTracking/CloudTraking.CarSimulator/appsettings.json
+/CloudTracking/CloudTraking/appsettings.json
+/CloudTracking/CloudTraking.PingService/appsettings.json

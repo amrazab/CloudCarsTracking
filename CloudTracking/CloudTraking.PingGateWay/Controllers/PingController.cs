@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CloudTracking.Messages;
 using CloudTracking.ServiceBus;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace CloudTraking.PingGateWay.Controllers
 {
@@ -13,9 +14,10 @@ namespace CloudTraking.PingGateWay.Controllers
     public class PingController : ControllerBase
     {
         private IServiceBus<PingMessage> _serviceBus;
-        public PingController(IServiceBus<PingMessage> serviceBus)
+        public PingController(IServiceBus<PingMessage> serviceBus,IConfiguration configuration)
         {
             _serviceBus = serviceBus;
+            _serviceBus.ConnectionString = configuration["BusConnectionString"];
             _serviceBus.QueueName = "pingqueue";
         }
        
