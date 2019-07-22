@@ -8,13 +8,16 @@ namespace CloudTracking.PingService
 {
     internal class QueueListener
     {
-        private IServiceBus<PingMessage> serviceBus;
-        IStorage storage;
+        IServiceBus<PingMessage> serviceBus;
+         IStorage storage;
+        private string connectoinString;
+        private IServiceProvider serviceProvider;
         internal  void Start(IServiceProvider serviceProvider,IConfiguration configuration)
         {
+            this.serviceProvider = serviceProvider;
             this.storage =  (IStorage)serviceProvider.GetService(typeof(IStorage)); ;
              serviceBus =(IServiceBus<PingMessage>) serviceProvider.GetService(typeof( IServiceBus<PingMessage>));
-            serviceBus.ConnectionString = configuration["BusConnectionString"];
+            serviceBus.ConnectionString =connectoinString= configuration["BusConnectionString"];
             serviceBus.QueueName = "pingqueue";
             serviceBus.OnRecieve += ServiceBuse_OnRecieve;
             serviceBus.startListen();
@@ -23,7 +26,8 @@ namespace CloudTracking.PingService
         private  void ServiceBuse_OnRecieve(object sender, PingMessage message)
         {
             storage.UpdateStatusAsync(message);
-            storage.LogStatus(message);
+            new QueueSender(connectoinString, "eventsourcingqueue", serviceProvider).send(message);
+            new QueueSender(connectoinString, "statusqeue", serviceProvider).send(message);
         }
     }
 }

@@ -6,34 +6,35 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import {CustomersComponent} from './Customres/customers.component';
-import { CustomerComponent } from './Customres/customer.component'
+import {CustomersComponent} from './Customers/customers.component';
+import { CarsComponent } from './Cars/cars.component';
+import {CustomerService} from './services/customer.service';
+import {CarsService} from './services/cars.service';
+import {TrackingService} from './services/tracking.service';
+import { TrackingComponent } from './tracking/tracking.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
     CustomersComponent,
-    CustomerComponent
+    CarsComponent,
+    TrackingComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: '', component:TrackingComponent , pathMatch: 'full' },
       { path: 'customers', component: CustomersComponent },
+      { path: 'cars', component: CarsComponent },
     ])
   ],
-  providers: [],
+  providers: [CustomerService,
+    CarsService,
+    TrackingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -34,6 +34,25 @@ namespace CloudTracking.Storage
              mapper = mappingConfig.CreateMapper();
 
         }
+        public async Task<List<PingMessage>> GetStatusAsync(int? status,string customerId)
+        {
+            List<string> filters = new List<string>();
+            if (status != null) 
+            filters.Add(TableQuery.GenerateFilterConditionForInt("", QueryComparisons.Equal, status.Value));
+            if(!string.IsNullOrEmpty(customerId))
+                filters.Add(TableQuery.GenerateFilterConditionForInt("", QueryComparisons.Equal, status.Value));
+            
+            TableQuery<PingMessageEntity> query = new TableQuery<PingMessageEntity>();
+            if(filters.Count>0)
+            {
+                query = query.Where( string.Join (" and " ,filters.ToArray()) );
+               
+            }
+            var result = await tableStatus.ExecuteQuerySegmentedAsync(query, null);
+            var lst = new List<PingMessageEntity>();
+            lst.AddRange(result);
+            return mapper.Map<List<PingMessage>>(lst);
+        }
         public async Task<bool> LogStatus(PingMessage message)
         {
             try { 
@@ -44,7 +63,7 @@ namespace CloudTracking.Storage
 
             TableOperation insertOperation = TableOperation.Insert(pingEntity);
 
-            var r = await tableStatus.ExecuteAsync(insertOperation);
+            var r = await tableEventSourcing.ExecuteAsync(insertOperation);
             return true;
             }
             catch (Exception ex)

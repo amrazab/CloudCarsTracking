@@ -1,0 +1,37 @@
+<h1>Tracking</h1>
+
+
+
+<p *ngIf="!statusList"><em>Loading...</em></p>
+
+<table class='table' *ngIf="statusList">
+  <thead>
+    <tr>
+        <th>customer id</th>
+      <th>car id</th>
+     
+     <th>Oil</th>
+     <th>Time</th>
+     <th>Error</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of statusList">
+        <td>{{ s.customerId }}</td>
+      <td>{{ s.carId }}</td>
+      <td>
+          <div style="display:block; width:100px;height:3px;background:grey;">
+              <div style="display:block; height:3px;background:red;" [style.width.px]="s.oilLevel">
+              
+              </div>
+              </div>
+     
+      
+      <td>{{ s.time | date:'yyyy-MM-dd HH:mm:ss '}}</td>
+      <td>{{s.errorMessage}}</td>
+      
+     
+    </tr>
+  </tbody>
+</table>

@@ -13,3 +13,5 @@ D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2
 D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2.1\CloudTracking.Messages.pdb
 D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\obj\Debug\netcoreapp2.1\CloudTraking.CarSimulator.csproj.CopyComplete
 D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2.1\appsettings.json
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2.1\CloudTracking.Storage.dll
+D:\swedq.se\Source\CloudTracking\CloudTraking.CarSimulator\bin\Debug\netcoreapp2.1\CloudTracking.Storage.pdb

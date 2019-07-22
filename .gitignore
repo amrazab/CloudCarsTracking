@@ -16,3 +16,7 @@
 /CloudTracking/CloudTraking.CarSimulator/appsettings.json
 /CloudTracking/CloudTraking/appsettings.json
 /CloudTracking/CloudTraking.PingService/appsettings.json
+/CloudTracking/CloudTraking/appsettings.json
+/CloudTracking/CloudTracking.EventSourcing/bin/Debug/netcoreapp2.1
+/CloudTracking/CloudTracking.EventSourcing/obj
+/CloudTracking/CloudTracking.EventSourcing/appsettings.json

@@ -14,6 +14,7 @@ namespace CloudTracking.Storage
            
             CreateMap<PingMessage, PingLogEntry>();
             CreateMap<PingMessage, PingMessageEntity>();
+            CreateMap<PingMessageEntity, PingMessage>();
         }
     }
 }

@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import{Customer} from '../Models/Customer'
+import {CustomerService} from '../services/customer.service';
 
 @Component({
   selector: 'customers',
@@ -7,22 +8,15 @@ import{Customer} from '../Models/Customer'
 })
 export class CustomersComponent implements OnInit {
   ngOnInit() {
-   this.customers=[
-     {
-       Id:"c1",
-       Name:"amr",
-       Address:"alex"
-     },
-     {
-      Id:"c2",
-      Name:"ali",
-      Address:"cairo"
-    }
-   ]
+    this.customerService.Updated.subscribe(customer=>console.log(customer.name));
+   this.customerService.loadCustomers().subscribe(data => {
+  this.customers=data;
+  
+});
   }
   customers:Customer[];
   title:string ="Customers List";
-  constructor()
+  constructor(private customerService:CustomerService)
   {
    this.setTitle("Customers..")
   }
