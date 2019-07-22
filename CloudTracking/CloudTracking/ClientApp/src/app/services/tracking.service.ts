@@ -4,7 +4,8 @@ import { Tracking } from '../Models/Tracking';
 @Injectable()
 export class TrackingService {
   private hubConnection: signalR.HubConnection;
-  public StatusUpdated: EventEmitter<Tracking> = new EventEmitter();
+  public StatusUpdated: EventEmitter<Tracking> = new EventEmitter(); 
+  public StatusLoaded: EventEmitter<Tracking[]> = new EventEmitter();
   constructor() { 
     this.hubConnection = new signalR.HubConnectionBuilder()
     .withUrl('/trackinghub')
@@ -24,7 +25,7 @@ export class TrackingService {
   });
   this.hubConnection.on('statusLoaded', (data) => {
     
-  alert("statusLoaded")
+    this.StatusLoaded.emit(data);
   });
 
   }

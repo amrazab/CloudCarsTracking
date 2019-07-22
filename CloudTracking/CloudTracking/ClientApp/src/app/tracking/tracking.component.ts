@@ -16,10 +16,20 @@ export class TrackingComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.statusList=[];
+    this.trackingService.getStatus();
+    this.trackingService.StatusLoaded.subscribe(
+
+      (data:Tracking[])=>{
+        this.statusList=data;
+      }
+    );
     this.trackingService.StatusUpdated.subscribe(
       (      item: Tracking)=>
       {
+        if(this.statusList==null || this.statusList==undefined)
+        {
+          this.statusList=[];
+        }
         var currentCar = this.statusList.filter(s=> s.carId==item.carId);
         if(currentCar.length==0){
         this.statusList.push(item)

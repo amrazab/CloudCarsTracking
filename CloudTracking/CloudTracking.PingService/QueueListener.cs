@@ -27,7 +27,7 @@ namespace CloudTracking.PingService
         {
             storage.UpdateStatusAsync(message);
             new QueueSender(connectoinString, "eventsourcingqueue", serviceProvider).send(message);
-            new QueueSender(connectoinString, "statusqeue", serviceProvider).send(message);
+           // new QueueSender(connectoinString, "statusqeue", serviceProvider).send(message);
         }
     }
 }
