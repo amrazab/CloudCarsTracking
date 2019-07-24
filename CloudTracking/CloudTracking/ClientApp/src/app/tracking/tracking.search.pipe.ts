@@ -6,7 +6,7 @@ import { stat } from 'fs';
     name: 'TrackingSearch'
   })
 export class TrackingSearchPipe implements PipeTransform {
-  transform(tracking: Tracking[], customer: string:status:number) {
+  transform(tracking: Tracking[], customer: string,status:number) {
     return tracking.filter(t => (customer==""  || t.customerId==customer)
     &&(status==0 || t.carStatus==status)
     );

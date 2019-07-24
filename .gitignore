@@ -20,3 +20,6 @@
 /CloudTracking/CloudTracking.EventSourcing/bin/Debug/netcoreapp2.1
 /CloudTracking/CloudTracking.EventSourcing/obj
 /CloudTracking/CloudTracking.EventSourcing/appsettings.json
+/CloudTracking/CloudTracking.Messages/bin/Release/netcoreapp2.1
+/CloudTracking/CloudTracking.ServiceBus/bin/release/netcoreapp2.1
+/CloudTracking/CloudTracking.Storage/bin/release/netcoreapp2.1
