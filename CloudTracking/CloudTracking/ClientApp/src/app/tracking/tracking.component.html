@@ -3,8 +3,45 @@
 
 
 <p *ngIf="!statusList"><em>Loading...</em></p>
+<div *ngIf="statusList">
+  <div class="row">
+      <div class="col-sm-2">
+        Customer
+        </div>
+    <div class="col-sm-4">
 
-<table class='table' *ngIf="statusList">
+        <select class="form-control form-control-primary" 
+        [(ngModel)]="customerSerch" >
+        <option value="" >
+           --Select Customer--
+           </option>
+          <option *ngFor="let customer of customers" [ngValue]="customer">
+           {{customer}}
+          </option>
+
+    </select>
+   
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+          Stauts
+          </div>
+      <div class="col-sm-4">
+  
+          <select class="form-control form-control-primary" 
+          [(ngModel)]="statusSearch" >
+          <option value="0" >--Select Status--</option>
+          <option value="1" >Working</option>
+          <option value="2" >Error</option>
+           
+  
+      </select>
+     
+      </div>
+    <div class="col-sm-5"></div>
+  </div>
+<table class='table' >
   <thead>
     <tr>
         <th>customer id</th>
@@ -17,7 +54,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let s of statusList">
+    <tr *ngFor="let s of (statusList | TrackingSearch:customerSerch:statusSearch)">
         <td>{{ s.customerId }}</td>
       <td>{{ s.carId }}</td>
       <td>
@@ -35,3 +72,4 @@
     </tr>
   </tbody>
 </table>
+</div>

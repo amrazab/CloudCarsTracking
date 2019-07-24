@@ -12,6 +12,7 @@ import {CustomerService} from './services/customer.service';
 import {CarsService} from './services/cars.service';
 import {TrackingService} from './services/tracking.service';
 import { TrackingComponent } from './tracking/tracking.component';
+import { TrackingSearchPipe } from './tracking/tracking.search.pipe';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { TrackingComponent } from './tracking/tracking.component';
     CustomersComponent,
     CarsComponent,
     TrackingComponent,
+    TrackingSearchPipe
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {Tracking} from '../Models/Tracking';
 import {TrackingService} from '../services/tracking.service';
 
-
 @Component({
   selector: 'app-tracking',
   templateUrl: './tracking.component.html',
@@ -10,6 +9,9 @@ import {TrackingService} from '../services/tracking.service';
 })
 export class TrackingComponent implements OnInit {
   statusList:Tracking[];
+  customers:string[];
+  customerSerch:string="";
+  statusSearch:number=0;
   constructor(private trackingService:TrackingService ) {
 
 
@@ -21,6 +23,7 @@ export class TrackingComponent implements OnInit {
 
       (data:Tracking[])=>{
         this.statusList=data;
+        this.fillCustomers();
       }
     );
     this.trackingService.StatusUpdated.subscribe(
@@ -42,6 +45,18 @@ export class TrackingComponent implements OnInit {
       
       }
       );
+  }
+  fillCustomers() {
+    if(this.customers==null || this.customers==undefined)
+    {
+      this.customers=[];
+    }
+    var customers = this.statusList.map(function(item) { return item.customerId; });
+    this.customers = customers.filter(function(v,i) { return customers.indexOf(v) == i; });
+  }
+  isfiltered():boolean
+  {
+    return false;
   }
 
 }
